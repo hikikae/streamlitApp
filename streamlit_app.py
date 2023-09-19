@@ -13,7 +13,7 @@ streamlit.text('🥑🍞 Avocado Toast')
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 #Seleccionador
-my_fruit_list=my_fruit_list.index('Fruit')
+my_fruit_list=my_fruit_list.set_index('Fruit')
 streamlit.multiselect("Escoge cualquier fruta:", list(my_fruit_list.index))
 #Coloca la lista de donde se selecciona
 streamlit.dataframe(my_fruit_list)
