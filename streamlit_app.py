@@ -23,7 +23,7 @@ streamlit.dataframe(my_fruit_list)
 
 ### Para poder seleccionar de verdad avocado and banana
 my_fruit_lista = my_fruit_lista.set_index('Fruit')
-fruits_selected = streamlit.multiselect("Escoge cualquier fruta:", list(my_fruit_lista.index),['Avocado','Banana'])
+fruits_selected = streamlit.multiselect("Escoge cualquier fruta:", list(my_fruit_lista.index))
 fruits_to_show = my_fruit_lista.loc[fruits_selected]
 
 #despliega la lista en una pagina
